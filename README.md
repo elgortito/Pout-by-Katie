@@ -1,37 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Lip Booking — Book & Pay</title>
-<style>
-  :root{
-    --bg: #0f0f12;
-    --card: #141416;
-    --muted: #cfcfcf;
-    --accent: #e75480;
-    --accent-2: #2d6cdf;
-    --btn-text:#ffffff;
-    --radius:12px;
-    --maxw:820px;
-  }
-  html,body{height:100%; margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:#fff;}
-  .wrap{max-width:var(--maxw); margin:28px auto; padding:22px;}
-  header{display:flex; align-items:center; gap:16px;}
-  .logo {width:64px; height:64px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:20px;}
-  h1{margin:0; font-size:22px;}
-  p.lead{margin:6px 0 18px; color:var(--muted);}
-  .card{background:var(--card); border-radius:var(--radius); padding:16px; margin:12px 0; border:1px solid rgba(255,255,255,0.03);}
-  .buttons{display:flex; gap:10px; flex-wrap:wrap;}
-  .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 14px; border-radius:12px; text-decoration:none; color:var(--btn-text); font-weight:600; border:0; cursor:pointer;}
-  .btn-pay{background:linear-gradient(90deg,var(--accent),var(--accent-2));}
-  .btn-alt{background:#232326; color:var(--muted); border:1px solid rgba(255,255,255,0.03);}
-  small{color:var(--muted); display:block; margin-top:8px;}
-  .note{font-size:13px; color:var(--muted);}
-  iframe{width:100%; height:700px; border:0; border-radius:10px; background:#fff;}
-  .flex{display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
-  .field{display:flex; flex-direction:column; gap:6px;}
-  .field input, .field select{padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:#fff;}
+x; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:#fff;}
   .small-input{width:160px;}
   .customize{display:flex; gap:12px; align-items:center; margin-top:8px;}
   .color{display:flex; gap:6px; align-items:center;}
