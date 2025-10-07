@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pout by Katie</title>
+  <style>
+    :root{
+      --pink-dark:#d73b6a;
+      --pink-soft:#ff7fa3;
+      --gold:#d6b16b;
+      --white:#ffffff;
+      --ink:#2a2a2a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif;
+      color:var(--ink);
+      background:linear-gradient(135deg,#ffe6ef,#fff);
+      text-align:center;
+    }
+    header{
+      background:linear-gradient(90deg,var(--pink-soft),var(--pink-dark));
+      color:var(--white);
+      padding:38px 20px 28px;
+      text-shadow:0 4px 10px rgba(0,0,0,.3);
+      animation:fadeIn 1.1s ease;
+    }
+    h1{margin:0;font-size:2.6rem;letter-spacing:.4px}
+    .contact-info{margin-top:10px;font-size:1.05rem}
+    .contact-info a{color:var(--white);text-decoration:none;font-weight:600}
+    .contact-info .phone,
+    .contact-info .location{
+      display:inline-block;
+      margin:6px 10px;
+      background:rgba(255,255,255,.2);
+      padding:6px 12px;
+      border-radius:20px;
+      font-weight:600;
+    }
+    .contact-info a:hover{text-decoration:underline;color:var(--gold)}
+    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
+
+    .fb-section{margin:28px auto 18px auto;animation:fadeIn .9s ease}
+    .fb-title{font-size:1.25rem;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin:0 0 12px}
+    .fb-btn{
+      display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+      background:linear-gradient(90deg,var(--pink-soft),var(--pink-dark));color:var(--white);
+      font-weight:700;padding:12px 22px;border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,.25);
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .fb-btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(215,59,106,.45)}
+
+    .notice{
+      margin:18px auto 24px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(214,177,107,.45);
+      border-radius:14px;
+      padding:18px 16px;
+      box-shadow:0 8px 24px rgba(0,0,0,.08);
+      text-align:left;
+    }
+    .notice h3{margin:0 0 8px;color:var(--pink-dark);font-size:1.2rem}
+    .notice ul{margin:8px 0 0 18px;padding:0}
+    .notice li{margin:6px 0}
+    .notice .bold{font-weight:800}
+
+    .payment-section{
+      margin:18px auto 50px auto;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(200px,1fr));
+      gap:14px;
+    }
+    .card{
+      background:linear-gradient(180deg,rgba(214,177,107,.18),rgba(255,127,163,.12));
+      border:1px solid rgba(214,177,107,.38);
+      border-radius:12px;
+      padding:16px 14px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .card h4{margin:4px 0 6px;font-size:1.15rem}
+    .price{margin:0 0 6px;font-weight:800}
+    .deposit{margin:0 0 12px;color:#444}
+    .pay-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      padding:9px 12px;border-radius:10px;
+      text-decoration:none;font-weight:800;
+      border:1px solid rgba(0,0,0,.08);
+      box-shadow:0 3px 10px rgba(0,0,0,.08);
+      transition:transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+      font-size:.95rem;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+    .btn:active{transform:translateY(0);opacity:.9}
+    .btn.venmo{background:#1e7cff;color:#fff}
+    .btn.cashapp{background:#00c244;color:#fff}
+    .btn.applepay{background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"San Francisco";}
+    .btn.applepay span{font-weight:600;font-size:1rem;letter-spacing:0.2px}
+    .footnote{margin-top:10px;font-size:.9rem;color:#555}
+    footer{margin:26px 0 40px;color:#777}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @media (max-width:860px){.payment-section{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Pout by Katie</h1>
+      <div class="contact-info">
+        <span class="phone">📞 <a href="tel:18067021615">806-702-1615</a></span>
+        <span class="location">📍 <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x86fe73d132b4621f:0x1920794d7341b8e1?entry=s&sa=X&ved=2ahUKEwjR9ve_0pKQAxVKD1kFHe5xMb0Q4kB6BAgVEAA" target="_blank" rel="noopener">Peridot Studio</a></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="fb-section">
+      <h2 class="fb-title">Follow Katie on Facebook</h2>
+      <a class="fb-btn" href="https://www.facebook.com/share/1GG6LaY1re/?mibextid=wwXIfr" target="_blank" rel="noopener">
+        <span> Facebook</span>
+      </a>
+    </section>
+
+    <section class="notice">
+      <h3>Booking & Deposit Policy</h3>
+      <ul>
+        <li>The amount you pay here is a <span class="bold">deposit equal to 50%</span> of the total service price.</li>
+        <li>The <span class="bold">remaining 50% is due at the time of service</span> in-studio.</li>
+        <li>When paying, please include your <span class="bold">Full Name & Phone Number</span> in the payment description.</li>
+      </ul>
+    </section>
+
+    <section class="payment-section">
+      <article class="card">
+        <h4>Half Syringe</h4>
+        <p class="price">Total: $100</p>
+        <p class="deposit">Deposit due now: <strong>$50 (50%)</strong></p>
+        <div class="pay-row">
+          <a class="btn venmo" target="_blank" rel="noopener" href="https://venmo.com/?txn=pay&audience=private&recipients=Katie-hickox-1&amount=50&note=DEPOSIT%2050%%20-%20Half%20Syringe%20-%20Add%20Name%20%26%20Phone">Venmo $50</a>
+          <a class="btn cashapp" target="_blank" rel="noopener" href="https://cash.app/$hickoxkatieee/50">Cash App $50</a>
+          <a class="btn applepay" href="sms:+18067021615&body=Apple%20Pay%20Deposit%20%2450%20-%20Name%3A%20%5Byour%20name%5D%20Phone%3A%20%5Byour%20number%5D"><span> Pay</span></a>
+        </div>
+        <div class="footnote">Add: “Full Name & Phone” in the payment note</div>
+      </article>
+
+      <article class="card">
+        <h4>Full Syringe</h4>
+        <p class="price">Total: $200</p>
+        <p class="deposit">Deposit due now: <strong>$100 (50%)</strong></p>
+        <div class="pay-row">
+          <a class="btn venmo" target="_blank" rel="noopener" href="https://venmo.com/?txn=pay&audience=private&recipients=Katie-hickox-1&amount=100&note=DEPOSIT%2050%%20-%20Full%20Syringe%20-%20Add%20Name%20%26%20Phone">Venmo $100</a>
+          <a class="btn cashapp" target="_blank" rel="noopener" href="https://cash.app/$hickoxkatieee/100">Cash App $100</a>
+          <a class="btn applepay" href="sms:+18067021615&body=Apple%20Pay%20Deposit%20%24100%20-%20Name%3A%20%5Byour%20name%5D%20Phone%3A%20%5Byour%20number%5D"><span> Pay</span></a>
+        </div>
+        <div class="footnote">Add: “Full Name & Phone” in the payment note</div>
+      </article>
+
+      <article class="card">
+        <h4>1½ Syringes</h4>
+        <p class="price">Total: $300</p>
+        <p class="deposit">Deposit due now: <strong>$150 (50%)</strong></p>
+        <div class="pay-row">
+          <a class="btn venmo" target="_blank" rel="noopener" href="https://venmo.com/?txn=pay&audience=private&recipients=Katie-hickox-1&amount=150&note=DEPOSIT%2050%%20-%201%C2%BD%20Syringes%20-%20Add%20Name%20%26%20Phone">Venmo $150</a>
+          <a class="btn cashapp" target="_blank" rel="noopener" href="https://cash.app/$hickoxkatieee/150">Cash App $150</a>
+          <a class="btn applepay" href="sms:+18067021615&body=Apple%20Pay%20Deposit%20%24150%20-%20Name%3A%20%5Byour%20name%5D%20Phone%3A%20%5Byour%20number%5D"><span> Pay</span></a>
+        </div>
+        <div class="footnote">Add: “Full Name & Phone” in the payment note</div>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2025 Pout by Katie — All Rights Reserved</footer>
+</body>
+</html>
